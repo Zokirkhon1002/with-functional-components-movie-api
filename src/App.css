@@ -1,6 +1,4 @@
-.App {
-  text-align: center;
-}
+
 
 .App-logo {
   height: 40vmin;
@@ -14,7 +12,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #323438;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,8 +22,27 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+body {
+  font-family: 'Courier New', Courier, monospace1;
+}
+.loading {
+  position: absolute;
+  transform: scale(0.6);
+  left: 450px;
+}
+
+.btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+label:not(:last-child){
+  margin-right: 1rem;
+}
+h2 {
+position: absolute;
+
 }
 
 @keyframes App-logo-spin {
