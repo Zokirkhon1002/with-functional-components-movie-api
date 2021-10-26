@@ -11,7 +11,7 @@ export default function Main()  {
 
    const searchMovies = (searchContent, type = 'all') => {
       setLoading(true);
-        fetch(`http://www.omdbapi.com/?apikey=34c04d3a&s=${searchContent}${type !== 'all' ? `&type=${type}` : ''}`)
+        fetch(`https://www.omdbapi.com/?apikey=34c04d3a&s=${searchContent}${type !== 'all' ? `&type=${type}` : ''}`)
         .then(response => response.json())
         .then((data) => {
           setLoading(false);
@@ -20,7 +20,7 @@ export default function Main()  {
     }
 
     useEffect(() => {
-      fetch('http://www.omdbapi.com/?apikey=34c04d3a&s=panda')
+      fetch('https://www.omdbapi.com/?apikey=34c04d3a&s=panda')
       .then(response => response.json())
       .then((data) => {
         setMovies(data.Search);
